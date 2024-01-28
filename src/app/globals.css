@@ -7,5 +7,5 @@ body {
   background-image: url(/Images/fundo.png);
   background-size: cover;
   background-blend-mode: multiply;
-  @apply flex flex-col w-full h-[100vh] bg-opacity-35;
+  @apply flex flex-col justify-center items-center w-full h-[100vh] bg-opacity-35;
 }
