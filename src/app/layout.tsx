@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { grotesk } from "./fonts/fonts";
+import { archivo, grotesk } from "./fonts/fonts";
 
 export const metadata: Metadata = {
   title: "Loki - A série",
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${grotesk.variable}`}>{children}</body>
+      <body className={`${grotesk.variable} ${archivo.variable}`}>{children}</body>
     </html>
   );
 }
