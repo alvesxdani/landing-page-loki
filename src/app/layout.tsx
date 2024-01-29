@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { archivo, grotesk } from './fonts/fonts'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 export const metadata: Metadata = {
   title: 'Loki - A série',
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={`${grotesk.variable} ${archivo.variable}`}>
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   )
